@@ -118,7 +118,7 @@ public class BaseAdapterEditTextView extends BaseAdapter implements View.OnClick
 
     /**
      *
-     * @param v　事件源
+     * @param v　事件源5554
      */
     @Override
     public void onClick(View v) {
