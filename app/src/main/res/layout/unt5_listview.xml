@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/textView19"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_weight="0.92" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dialog"
+        android:entries="@array/num"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:id="@+id/GridView1"
+        android:numColumns="3"
+        android:layout_weight="0.19" />
+</LinearLayout>

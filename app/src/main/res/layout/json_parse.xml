@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_native_tojavaobject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Json_javaobject" />
+
+    <Button
+        android:id="@+id/bt_native_tojavalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/JsonArray_JavaList" />
+
+    <Button
+        android:id="@+id/bt_native_complex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ComplexJSON_Parse" />
+
+    <Button
+        android:id="@+id/bt_native_special"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Specil_JSON_Parse" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原始数据" />
+    <TextView
+        android:id="@+id/tv_native_orignal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转换后的数据" />
+    <TextView
+        android:id="@+id/tv_native_last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

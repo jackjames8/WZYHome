@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button25_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:text="translate" />
+
+    <Button
+        android:id="@+id/button27_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button26_Scale"
+        android:layout_toRightOf="@+id/button26_Scale"
+        android:layout_weight="1"
+        android:text="alpha" />
+
+    <Button
+        android:id="@+id/button26_Scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:text="scale"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button25_translate"
+        android:layout_toEndOf="@+id/button25_translate" />
+
+    <Button
+        android:id="@+id/button28_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button27_alpha"
+        android:layout_toRightOf="@+id/button27_alpha"
+        android:layout_weight="1"
+        android:text="rotate" />
+
+    <ImageView
+        android:id="@+id/imageView_po"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="239dp"
+        app:srcCompat="@drawable/fat_po_f01" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button25_translate"
+        android:text="zhuhe" />
+
+</RelativeLayout>
+

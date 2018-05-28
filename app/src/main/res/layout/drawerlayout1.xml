@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v4_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--主题内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--ActionBar头部-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/color_white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/hz_idxlogo_720x1280"
+                />
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/v4_text"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+    <!--侧滑栏的内容-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        app:headerLayout="@layout/navigation_header"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navigation_view">
+            <ListView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/v4_listview"
+                android:background="@color/color_gray"
+                />
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

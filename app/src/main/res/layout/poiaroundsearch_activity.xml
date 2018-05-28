@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 使用高德地图的提供的MapView -->
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 定义输入地址的文本框 -->
+        <LinearLayout
+            android:id="@+id/linearLayoutSearchLocation"
+            style="@style/layoutForButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/direction_black_left" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#f3f3f3"></View>
+            <!-- 定义输入地址的文本框 -->
+            <EditText
+                android:id="@+id/input_edittext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="搜索地址"
+                android:inputType="text"
+                android:text=""
+                android:background="@null"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:background="#f3f3f3"></View>
+
+            <TextView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:drawableRight="@drawable/select_citydown_arrow"/>
+            <!--       <Button
+                       android:id="@+id/loc"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="4"
+                       android:text="@string/loc" />-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@+id/linearLayoutDestination">
+            <ImageView
+                android:id="@+id/imageLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_add_clicklocation"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutDestination"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_white"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/poi_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/set_textview_bg_orange"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/poi_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/set_textview_bg_orange"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/poi_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/set_textview_bg_orange"
+                android:gravity="center"
+                android:text="按此编辑发货人详细信息(选填)"
+               />
+
+            <TextView
+                android:id="@+id/city_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/orangeMore"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_white"
+          />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

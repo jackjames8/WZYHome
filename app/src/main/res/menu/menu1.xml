@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+       android:id="@+id/item1"
+       android:title="@string/UserName"
+       android:orderInCategory="100"
+       android:showAsAction="never"
+       android:checkable="true">
+      <menu>
+         <item
+             android:id="@+id/item1a"
+             android:title="2UserName"
+           />
+         <item
+             android:id="@+id/item1b"
+             android:title="1UserName"
+            />
+         <group android:id="@+id/a"
+             android:checkableBehavior="all">
+
+            <item
+                android:id="@+id/item2a"
+                android:title="4Name"
+
+                />
+            <item
+                android:id="@+id/item2b"
+                android:title="3Name"
+                />
+
+         </group>
+
+      </menu>
+       </item>
+   <item android:id="@+id/item2"
+      android:title="password"
+      android:orderInCategory="5"
+       android:checkable="true"/>
+      />
+</menu>

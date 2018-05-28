@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/item1"
+            android:icon="@mipmap/hz_leftmenu_money_2x"
+            android:title="item1"
+            >
+        </item>
+        <item android:id="@+id/item2"
+            android:icon="@mipmap/hz_leftmenu_service_2x"
+            android:title="item2"
+            >
+        </item>
+        <item android:id="@+id/item3"
+            android:icon="@mipmap/hz_leftmenu_set_2x"
+            android:title="item3"
+            >
+        </item>
+        <item android:id="@+id/item4"
+            android:icon="@mipmap/hz_left_menu_mailbox_2x"
+            android:title="item4"
+            >
+        </item>
+        <item android:id="@+id/item5"
+            android:icon="@mipmap/hz_leftmenu_order_2x"
+            android:title="item5"
+            >
+        </item>
+    </group>
+</menu>

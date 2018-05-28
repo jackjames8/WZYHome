@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<tag1 name="app_name">XMLPULLDEMO</tag1>
+<tag2 name="UserName">UserName</tag2>
+<string name="balance">balance</string>
+
+</resources>

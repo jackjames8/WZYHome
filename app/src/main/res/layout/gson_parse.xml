@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_gson_tojavaobject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Json_javaobject" />
+
+    <Button
+        android:id="@+id/bt_gson_tojavalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/JsonArray_JavaList" />
+
+    <Button
+        android:id="@+id/bt_gson_JavaToJsonObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将JAVA对象转化为JSON对象" />
+
+    <Button
+        android:id="@+id/bt_gson_JavaToJsonArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将JAVA集合转换为JSON数组" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原始数据" />
+            <TextView
+                android:id="@+id/tv_gson_orignal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转换后的数据" />
+            <TextView
+                android:id="@+id/tv_gson_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<resources>
+
+
+ <!--       <style name="AppThemeNoActionBar" parent="AppTheme.Base"></style>
+
+        <style name="AppTheme.Base" parent="Theme.AppCompat">
+            <recycler_view_adapter name="windowActionBar">false</recycler_view_adapter>
+            <recycler_view_adapter name="android:windowNoTitle">true</recycler_view_adapter>
+            <recycler_view_adapter name="windowNoTitle">true</recycler_view_adapter>
+
+            &lt;!&ndash;Status bar color&ndash;&gt;
+            <recycler_view_adapter name="colorPrimaryDark">@color/colorAccent</recycler_view_adapter>
+            &lt;!&ndash; Actionbar color &ndash;&gt;
+            &lt;!&ndash;   <recycler_view_adapter name="colorPrimary">@color/accent_material_dark</recycler_view_adapter>&ndash;&gt;
+            &lt;!&ndash;Window color&ndash;&gt;
+            <recycler_view_adapter name="android:windowBackground">@color/cardview_light_background</recycler_view_adapter>
+        </style>-->
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">#4876FF</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">#3A5FCD</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--去掉系统默认的标题栏-->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!--
+        &lt;!&ndash; 改为没有ActionBar的主题 Theme.AppCompat.Light.NoActionBar &ndash;&gt;
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <recycler_view_adapter name="colorPrimary">@color/colorPrimary</recycler_view_adapter>
+            <recycler_view_adapter name="colorPrimaryDark">@color/colorPrimaryDark</recycler_view_adapter>
+            <recycler_view_adapter name="colorAccent">@color/colorAccent</recycler_view_adapter>
+            &lt;!&ndash; 这里设置左上角可点击展开的小图标 &ndash;&gt;
+            <recycler_view_adapter name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</recycler_view_adapter>
+        </style>
+
+        <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+            <recycler_view_adapter name="color">@android:color/white</recycler_view_adapter>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash;状态栏颜色&ndash;&gt;
+        <item name="colorPrimaryDark">@color/Indigo_colorPrimaryDark</item>
+        &lt;!&ndash;Toolbar颜色&ndash;&gt;
+        <item name="colorPrimary">@color/Indigo_colorPrimary</item>
+        &lt;!&ndash;返回键样式&ndash;&gt;
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>-->
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <recycler_view_adapter name="colorPrimary">@color/colorPrimary</recycler_view_adapter>
+            <recycler_view_adapter name="colorPrimaryDark">@color/colorPrimaryDark</recycler_view_adapter>
+            <recycler_view_adapter name="colorAccent">@color/colorAccent</recycler_view_adapter>
+        </style>-->
+
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarTabTextStyle">@style/actionBarTabTextStyle</item>
+    </style>
+    <!--定义ActionBarStyle风格,android:background,v7支持包中的android要去掉-->
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/color_gray</item>
+        <item name="backgroundStacked">@color/color_gray</item>
+        <item name="titleTextStyle">@style/MyTitleStyle</item>
+    </style>
+
+    <style name="MyTitleStyle">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="actionBarTabTextStyle">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <style name="gameoption">
+        <item name="android:textColor">#550055</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10pt</item>
+    </style>
+
+    <style name="Styletest">
+        <item name="android:layout_width">80px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:background">@drawable/button1</item>
+        <item name="android:layout_margin">10px</item>
+    </style>
+
+    <style name="Styletest2" parent="Styletest">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <color name="red">#fFF00000</color>
+
+    <style name="AppTheme1" parent="Animation.AppCompat.Dialog"></style>
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+
+    <style name="button_style">
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/button1</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="button_style2" parent="button_style">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Theme.AppCompat"></style>
+
+    <style name="Theme">Theme</style>
+
+    <style name="Animation.AppCompat"></style>
+
+    <style name="Animation"></style>
+
+
+    <style name="LocationProvider" parent="android:Theme.Holo.Light.DarkActionBar">
+         android:textColor="@color/color_Black"
+        android:background="#0f0"
+        android:gravity="center"
+        android:padding="10dp"
+    </style>
+
+    <!--自定义控件风格-->
+    <style name="TitleStyle">
+        <item name="android:background">#0f0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <declare-styleable name="TextViewBorder">
+        <attr name="borderColor" format="color"/>
+    </declare-styleable>
+
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+    <style name="layoutForFontStyle" >
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="layoutForButtonStyle" >
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="ButtonStyle" >
+        <item name="android:background">@color/orangeMore</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+<!--
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- PopupWindow  -->
+
+    <style name="pop_text_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- PopupWindow动画  -->
+    <style name="contextMenuAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
+    </style>
+
+</resources>

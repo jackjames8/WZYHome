@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get请求" />
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post请求" />
+    <Button
+        android:id="@+id/btn_OkHttpUtilGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用OkHttpUtil发get请求"
+        android:textAllCaps="false"/>
+    <Button
+    android:id="@+id/btn_OkHttpUtilPost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="使用OkHttpUtil发post请求"
+    android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_OkHttpUtilDownLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用OkHttpUtil下载大文件"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_OkHttpGetImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用OkHttpUtil加载图片"
+        android:textAllCaps="false"/>
+    <ProgressBar
+        android:id="@+id/progressBarOkHttp"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/imageOkhttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="显示请求数据"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+include ':app', ':harddisk'
+
+//you can include the AmapPoiSearchModule if you'd like to DIY
+// AmapPoiSearchModule的下载地址：https://github.com/amap-demo/android-poisearch-demo
+//include ':AmapPoiSearchModule'
+//project(":AmapPoiSearchModule").projectDir = new File("AmapPoiSearchModule路径")

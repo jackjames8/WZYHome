@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/play"
+        android:icon="@android:drawable/ic_media_play"
+        android:showAsAction="always"
+        android:title="play"
+        />
+    <item
+        android:id="@+id/power_off"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:showAsAction="ifRoom"
+        android:title="power_off"
+        />
+    <item
+        android:id="@+id/alarm"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        android:showAsAction="ifRoom"
+        android:title="alarm"
+        />
+    <item
+        android:id="@+id/pause"
+        android:icon="@android:drawable/ic_media_pause"
+        android:showAsAction="never"
+        android:title="pause"/>
+
+
+
+</menu>

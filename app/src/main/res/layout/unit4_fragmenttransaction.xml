@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <fragment
+     android:name="com.WZYHome.Study.Demo.Unit4_Activity_Fragment.Unit4_FragmentDemo1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_above="@+id/detail_container"
+     android:id="@+id/KListFragment"/>
+    <LinearLayout
+        android:id="@+id/detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="请输入用户名"
+        android:digits="A-Z|0-9"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        />
+    <!--cursorVisible控制光标是否可见
+    android:imeOptions="actionSearch"软键盘右下角显示的字
+    android:lineSpacingExtra表示行间距
+    android:maxLength最大输入字符数
+    android:shadowDx="2"字体显示阴影
+    -->
+    <EditText
+        android:imeOptions="actionSearch"
+        android:hint="密码密码密码密码密码密码密码密码密码密码密码密码密码密码密码密码密码密码密码"
+        android:layout_width="150dp"
+        android:maxLength="6"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textPassword"
+        android:minLines="3"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="@color/color_gray"
+        android:lineSpacingExtra="5dp"
+        android:ems="10"
+        android:id="@+id/editPWD"
+        android:layout_below="@+id/textPWD"
+        android:layout_alignLeft="@+id/btnRegister"
+        android:layout_alignStart="@+id/btnRegister"
+        android:textSize="15sp"
+        android:cursorVisible="false"
+
+        />
+
+    <Button
+        android:text="@string/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/editPWD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/btnRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:text="你还可以输入10个字"
+        />
+
+    <EditText
+        android:id="@+id/LimtLengthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请在此写下你的评论，不超过10字："
+        android:maxLength="10"
+        android:inputType="textMultiLine"
+        />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:text="path" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_ok1"
+        android:text="输入路径"
+        android:layout_toRightOf="@id/edit1"
+        />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"
+        android:layout_below="@+id/textView41"/>
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit1"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:text="TextView" />
+
+</RelativeLayout>

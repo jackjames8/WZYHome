@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能列表"
+        style="@style/TitleStyle"/>
+<!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="秋天悄悄已过去，留下小秘密，啊啊啊啊啊啊啊呀啊呀啊啊啊啊职"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"/>-->
+    <com.WZYHome.Study.Demo.Unit2_View.Custom.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="秋天悄悄已过去，留下小秘密，啊啊啊啊啊啊啊呀啊呀啊啊啊啊职"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever" />
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+    </GridView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hz_idxadd_highlight_720x1280" />
+
+</LinearLayout>

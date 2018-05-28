@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#f9e5ec</color>
+    <color name="title_color">#77e177</color>
+    <color name="tab_color">#77e187</color>
+    <color name="color_gray">#545050</color>
+    <color name="color_white">#ffffff</color>
+    <color name="app_red_delete_color">#d23838</color>
+    <color name="app_blue_color">#508cdc</color>
+    <color name="progress_color">#19ea85</color>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#ff0000</color>
+    <color name="color_Black">#000000</color>
+    <color name="orange">#fc9254</color>
+    <color name="daojishi">#cccccc</color>
+    <color name="orangeMore">#ef6a14</color>
+</resources>

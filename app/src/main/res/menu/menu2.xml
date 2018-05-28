@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemFontSize" android:title="字体大小">
+        <menu>
+            <group android:id="@+id/group1" android:checkableBehavior="single">
+                <item android:id="@+id/item10" android:title="10pt"/>
+                <item android:id="@+id/item12" android:title="12pt"/>
+                <item android:id="@+id/item14" android:title="14pt"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/itemColor" android:title="字体颜色">
+        <menu>
+            <group android:id="@+id/group2" android:checkableBehavior="single">
+                <item android:id="@+id/itemRed" android:title="红色"/>
+                <item android:id="@+id/itemBlue" android:title="蓝色"/>
+                <item android:id="@+id/itemGreen" android:title="绿色"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

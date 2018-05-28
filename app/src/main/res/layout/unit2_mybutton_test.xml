@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/layout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button"
+        style="@style/button_style"/>
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button"
+        android:background="@drawable/buttonselector"/>
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button"
+        style="@android:style/MediaButton.Pause"/>
+</LinearLayout>
+<com.WZYHome.Study.Demo.Unit2_View.Custom_MyButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/layout2"
+     android:text="@string/SaveButton"
+     android:layout_marginTop="50dp"/>
+
+
+
+
+</RelativeLayout>

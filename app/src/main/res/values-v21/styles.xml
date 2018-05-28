@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <style name="AppTheme" parent="AppTheme.Base">
+ <recycler_view_adapter name="android:navigationBarColor">@color/accent_material_light</recycler_view_adapter>
+
+</style>-->
+
+    <!--<style name="AppTheme" parent="android:Theme.Material.Light"></style>-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>-->
+  <!--  <style name="AppTheme" parent="Theme.AppCompat.Light"></style>-->
+
+
+   <!-- <style name="CustomActivityTheme" parent="android:Theme.Light">
+        <recycler_view_adapter name="android:actionBarStyle">@style/MyActionBar</recycler_view_adapter>
+        &lt;!&ndash; other activity and action bar styles here &ndash;&gt;
+    </style>
+
+    &lt;!&ndash; style for the action bar backgrounds &ndash;&gt;
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <recycler_view_adapter name="android:background">@drawable/gamebackground</recycler_view_adapter>
+        <recycler_view_adapter name="android:backgroundStacked">@color/tab_color</recycler_view_adapter>
+        <recycler_view_adapter name="android:backgroundSplit">@color/tab_color</recycler_view_adapter>
+    </style>-->
+
+
+    <style name="Theme.AppCompat"></style>
+
+    <style name="Animation.AppCompat"></style>
+</resources>
