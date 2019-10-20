@@ -1,7 +1,8 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.WZYHome.Study.Demo.Unit2_View.Custom.MyScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#f10" />
+
+            <TextView
+                android:id="@+id/xuanfuA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:gravity="center"
+                android:drawableLeft="@drawable/a3"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaa" />
+
+            <ImageView
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:background="@drawable/a1"
+                 />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:background="@drawable/a2"
+                />
+
+        </LinearLayout>
+
+    </com.WZYHome.Study.Demo.Unit2_View.Custom.MyScrollView>
+
+    <TextView
+        android:id="@+id/xuanfuB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0"
+        android:gravity="center"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/a3"
+        android:text="bbbbbbbbbbbbbbbbbb" />
+</FrameLayout>

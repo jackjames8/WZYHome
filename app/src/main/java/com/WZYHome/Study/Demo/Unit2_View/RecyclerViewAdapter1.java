@@ -1,7 +1,10 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;

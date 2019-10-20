@@ -2,16 +2,19 @@ package com.WZYHome.Study.Demo.Unit4_Activity_Fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.WZYHome.Study.Demo.R;
@@ -67,7 +70,7 @@ public class Unit4_FragmentDemo1 extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager fm=getActivity().getSupportFragmentManager();
-                android.support.v4.app.FragmentTransaction ft=fm.beginTransaction();
+                FragmentTransaction ft=fm.beginTransaction();
                 ft.add(R.id.containerFrameLayout, fragment2,"hehe");
                 ft.commit();
             }

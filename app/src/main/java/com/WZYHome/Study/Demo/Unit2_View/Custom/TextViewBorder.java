@@ -11,12 +11,14 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 import com.WZYHome.Study.Demo.R;
 
 /**
  * Created by lp on 2016/9/21.
  */
-public class TextViewBorder extends android.support.v7.widget.AppCompatTextView {
+public class TextViewBorder extends AppCompatTextView {
     private static final int STROKE_WIDTH = 2;
     private int borderCol;
 

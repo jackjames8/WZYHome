@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下时显示 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip" />
+            <solid android:color="#ffcccccc" />
+            <stroke android:width="1.0dip" android:color="#ffcccccc" />
+        </shape>
+    </item>
+    <!-- 失去焦点 -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip" />
+            <solid android:color="#ffcccccc" />
+            <stroke android:width="1.0dip" android:color="#ffcccccc" />
+        </shape>
+    </item>
+    <!-- 默认显示 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip" />
+            <solid android:color="#FFee6a12" />
+            <stroke android:width="2dip" android:color="#00FFFFFF" />
+        </shape>
+    </item>
+</selector>

@@ -2,15 +2,19 @@ package com.WZYHome.Study.Demo.Unit13_NetWork;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
+import androidx.annotation.Nullable;
+
 import com.WZYHome.Study.Demo.R;
 import com.WZYHome.Study.Demo.Unit13_NetWork.Bean.Cars;
+import com.WZYHome.Study.Demo.Unit13_NetWork.Bean.jsonBean;
+import com.WZYHome.Study.Demo.Util.GogleGsonUtil;
 import com.WZYHome.Study.Demo.until;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -19,6 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -78,7 +83,7 @@ public class GSonParse extends Activity implements View.OnClickListener {
         switch (v.getId()) {
             //将JSON格式的字符串{}转换为Java对象
             case R.id.bt_gson_tojavaobject:
-
+                gson_tojavaobject();
                 break;
             //将JSON格式的字符串数组[]转换为Java对象的List
             case R.id.bt_gson_tojavalist:
@@ -96,6 +101,38 @@ public class GSonParse extends Activity implements View.OnClickListener {
         }
 
     }
+
+    public void   gson_tojavaobject(){
+        String json = until.myMenu;
+
+        jsonBean jsonBean=(jsonBean) GogleGsonUtil.JsonToObject(json, jsonBean.class);
+
+
+        String menuname = jsonBean.get个人信息().get(0).getMenuname();
+        tv_gson_last.setText( menuname);
+
+/*        JSONObject jsonObject = null;
+        try {
+            jsonObject = new JSONObject(json);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        //通过迭代器获取这段json当中所有的key值
+        Iterator keys = jsonObject.keys();
+        //然后通过一个循环取出所有的key值
+        while (keys.hasNext()){
+            String key = String.valueOf(keys.next());
+            System.out.println(key);
+            //最后就可以通过刚刚得到的key值去解析后面的json了
+        }*/
+
+    }
+
+
+
+
+
+
     //将JSON格式的字符串数组[]转换为Java对象的List
     private void jsonToJavaListByGson() {
         //1.获取或创建JSON数据

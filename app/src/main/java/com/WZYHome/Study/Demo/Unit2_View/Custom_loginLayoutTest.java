@@ -2,9 +2,11 @@ package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.WZYHome.Study.Demo.R;
 

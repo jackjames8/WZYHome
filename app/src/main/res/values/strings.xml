@@ -97,11 +97,10 @@
     <string name="GetWebData">GetWebData</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="LIji_Login">立即登录</string>
-    <string name="get">get请求</string>
-    <string name="post请求">post请求</string>
-    <string name="请求json数据">请求json数据</string>
-    <string name="imageRequest">imageRequest加载图片</string>
+    <string name="LIji_Login">login</string>
+    <string name="get">get</string>
+    <string name="post请求">post</string>
+    <string name="imageRequest">imageRequest</string>
     <string name="imageLoader加载图片">imageLoader加载图片</string>
     <string name="NetWorkImageView">NetWorkImageView加载图片</string>
     <string name="get_json_data">请求json数据</string>
@@ -112,7 +111,7 @@
     <string name="Specil_JSON_Parse">特殊JSON数据解析</string>
     <string name="app_name1">定位</string>
 
-    <string name="txtLong">经度:</string>
+    <string name="txtLong">longitude</string>
 
     <string name="txtLat">纬度:</string>
 
@@ -148,9 +147,8 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email         completions.     "</string>
+    <string name="请求json数据">getJson</string>
 
 
 </resources>

@@ -1,7 +1,9 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 

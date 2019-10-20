@@ -1,7 +1,11 @@
 package com.WZYHome.Study.Demo.Unit4_Activity_Fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +18,7 @@ import com.WZYHome.Study.Demo.R;
  * Created by Administrator on 2017/8/26.
  */
 
-public class ViewPagerFragment extends android.support.v4.app.Fragment {
+public class ViewPagerFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

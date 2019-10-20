@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/UpdateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_base_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TitleTextView"
+            style="@style/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="版本更新" />
+
+        <TextView
+            android:id="@+id/UpdateInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingTop="6dp"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/DownloadsTextView"
+            style="@style/BaseTemplateTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="立即下载"
+             />
+
+        <RelativeLayout
+            android:id="@+id/InstanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+         >
+
+            <ProgressBar
+                android:id="@+id/ProgressBar"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:progressDrawable="@drawable/progress_shape_list" />
+
+            <TextView
+                android:id="@+id/InstanceTextView"
+                style="@style/BaseTemplateTextView"
+                android:background="#00000000"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/NextHintTextView"
+            style="@style/BaseTemplateTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="下次提醒我"
+            />
+    </LinearLayout>
+</LinearLayout>

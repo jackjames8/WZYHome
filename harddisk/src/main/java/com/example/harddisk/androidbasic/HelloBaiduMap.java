@@ -3,9 +3,11 @@ package com.example.harddisk.androidbasic;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.BaiduMap;

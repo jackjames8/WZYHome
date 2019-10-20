@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/matchParent"
+  >
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        style="@style/titleLayout"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/titleTextView"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/exitImageButton"
+            style="@style/exitImageButton" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/VersionNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+</RelativeLayout>

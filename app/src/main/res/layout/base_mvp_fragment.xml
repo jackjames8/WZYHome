@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchParent">
+
+    <RelativeLayout
+        android:id="@+id/HintLayout"
+        style="@style/matchParent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/HintOrderNoDataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/hint_order_no_data"
+            android:text="没有相关的内容"
+            android:textColor="#323232"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RootLayout"
+        style="@style/matchParent">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,11 +1,15 @@
 package com.WZYHome.Study.Demo.Unit4_Activity_Fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
+
 import android.view.View;
 import android.widget.TabHost;
 
@@ -92,9 +96,9 @@ public class ViewPagerFragmentTest extends AppCompatActivity implements TabHost.
     }
 
     //设置一个fragmentAdapter适配器，去显示fragment.
-    class MyFragmentAdapter extends FragmentPagerAdapter{
+    class MyFragmentAdapter extends FragmentPagerAdapter {
 
-        private ArrayList<android.support.v4.app.Fragment> fragments=new ArrayList<>();
+        private ArrayList<Fragment> fragments=new ArrayList<>();
 
         public MyFragmentAdapter(FragmentManager fm) {
             super(fm);
@@ -105,7 +109,7 @@ public class ViewPagerFragmentTest extends AppCompatActivity implements TabHost.
         }
         //通过getItem()方法去调用所要呈现的fragment
         @Override
-        public android.support.v4.app.Fragment getItem(int position) {
+        public Fragment getItem(int position) {
            /* return CountingFragment.newInstance(position) ;*/
            return fragments.get(position);
         }

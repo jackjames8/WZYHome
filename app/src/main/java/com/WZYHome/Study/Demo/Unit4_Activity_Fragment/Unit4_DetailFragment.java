@@ -2,8 +2,11 @@ package com.WZYHome.Study.Demo.Unit4_Activity_Fragment;
 
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.view.View;
 
 import com.WZYHome.Study.Demo.R;

@@ -2,8 +2,10 @@ package com.WZYHome.Study.Demo.Unit13_NetWork;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
 import android.webkit.WebView;
+
+import androidx.annotation.Nullable;
 
 import com.WZYHome.Study.Demo.R;
 
@@ -36,7 +38,7 @@ public class Unit13_WebView extends Activity {
         webView.getSettings().setJavaScriptEnabled(true);
         //通过addJavascriptInterface()绑定两者
         webView.addJavascriptInterface(new Unit13_MyJavaScriptInterface(
-                getApplicationContext()),"Android");
+                Unit13_WebView.this),"Android");//传递一个android对象及名字给javascript
         webView.loadUrl("file:///android_asset/demo.html");
 
     }

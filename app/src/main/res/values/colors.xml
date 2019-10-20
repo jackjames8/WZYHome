@@ -17,4 +17,6 @@
     <color name="orange">#fc9254</color>
     <color name="daojishi">#cccccc</color>
     <color name="orangeMore">#ef6a14</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#BFBFBF</color>
 </resources>

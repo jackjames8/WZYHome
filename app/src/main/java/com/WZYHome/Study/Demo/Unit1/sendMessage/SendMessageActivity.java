@@ -2,13 +2,15 @@ package com.WZYHome.Study.Demo.Unit1.sendMessage;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.WZYHome.Study.Demo.R;
 import com.WZYHome.Study.Demo.Util.LogUtil;
@@ -37,7 +39,7 @@ import com.WZYHome.Study.Demo.Util.LogUtil;
 
  */
 
-public class SendMessageActivity extends AppCompatActivity{
+public class SendMessageActivity extends AppCompatActivity {
     EditText phoneEditText,sendContentEditText;
     Button sendMessageButton;
 

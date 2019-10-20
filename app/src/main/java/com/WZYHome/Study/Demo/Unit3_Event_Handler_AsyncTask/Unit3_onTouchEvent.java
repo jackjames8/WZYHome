@@ -2,7 +2,9 @@ package com.WZYHome.Study.Demo.Unit3_Event_Handler_AsyncTask;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;

@@ -1,7 +1,8 @@
 package com.WZYHome.Study.Demo.Unit16_Map;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;

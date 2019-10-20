@@ -1,9 +1,11 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.WZYHome.Study.Demo.R;
 

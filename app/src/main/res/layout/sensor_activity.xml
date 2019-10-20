@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/yaoTextView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="摇一摇，给妹子"
+        android:textColor="@color/color_white"
+        android:background="@color/red"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/meiNvImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/a3"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:onClick="go1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再摇一次"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

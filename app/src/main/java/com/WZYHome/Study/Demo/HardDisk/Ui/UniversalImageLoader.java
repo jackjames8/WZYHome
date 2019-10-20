@@ -4,13 +4,15 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.WZYHome.Study.Demo.HardDisk.Entity.Dog;
 import com.WZYHome.Study.Demo.R;
@@ -26,8 +28,7 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListe
 import com.orhanobut.logger.Logger;
 
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+
 
 import static com.WZYHome.Study.Demo.until.url;
 

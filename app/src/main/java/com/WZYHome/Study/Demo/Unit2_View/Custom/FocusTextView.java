@@ -3,11 +3,13 @@ package com.WZYHome.Study.Demo.Unit2_View.Custom;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatTextView;
+
 /**
  * Created by Administrator on 2017/10/20.
  */
 
-public class FocusTextView extends android.support.v7.widget.AppCompatTextView {
+public class FocusTextView extends AppCompatTextView {
 
     public FocusTextView(Context context) {
         super(context);

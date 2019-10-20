@@ -78,6 +78,7 @@ public class GridView_Spinner extends Activity {
             TextView  textView= wrapper.getTextView();
             imageView.setImageResource(resIds[position]);
             textView.setText(date[position]);
+
             return Row;
         }
 

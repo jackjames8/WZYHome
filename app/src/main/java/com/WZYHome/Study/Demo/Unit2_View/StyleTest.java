@@ -1,8 +1,9 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 
 import com.WZYHome.Study.Demo.R;
 

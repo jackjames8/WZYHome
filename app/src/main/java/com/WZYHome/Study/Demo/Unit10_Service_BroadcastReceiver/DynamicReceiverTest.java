@@ -1,6 +1,7 @@
 package com.WZYHome.Study.Demo.Unit10_Service_BroadcastReceiver;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -143,6 +143,15 @@
 
     <style name="Animation"></style>
 
+    <style name="matchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+    <style name="baseMatch" parent="matchParent">
+        <item name="android:background">#ffffffff</item>
+    </style>
 
     <style name="LocationProvider" parent="android:Theme.Holo.Light.DarkActionBar">
          android:textColor="@color/color_Black"
@@ -211,5 +220,37 @@
         <item name="android:windowEnterAnimation">@anim/context_menu_enter</item>
         <item name="android:windowExitAnimation">@anim/context_menu_exit</item>
     </style>
-
+    <!-- title name template -->
+<!--    <style name="titleTextView" parent="matchParent">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#1a1a1a</item>
+        <item name="android:textSize">16sp</item>
+    </style>-->
+    <style name="BaseTemplateTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/shape_base_text_view</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">确定</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- title name template -->
+    <style name="titleTextView" parent="matchParent">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#1a1a1a</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- title template -->
+    <style name="titleLayout" parent="baseMatch">
+        <item name="android:layout_height">@dimen/dp_48</item>
+    </style>
+    <!-- title exit template -->
+    <style name="exitImageButton" parent="titleLayout">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:src">@drawable/direction_black_left</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:onClick">onFinish</item>
+    </style>
 </resources>

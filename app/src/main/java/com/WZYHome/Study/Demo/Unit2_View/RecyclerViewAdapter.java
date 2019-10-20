@@ -1,11 +1,15 @@
 package com.WZYHome.Study.Demo.Unit2_View;
 
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 
 import com.WZYHome.Study.Demo.R;
 

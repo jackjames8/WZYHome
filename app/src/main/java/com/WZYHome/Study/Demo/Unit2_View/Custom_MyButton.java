@@ -6,12 +6,14 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
+import androidx.appcompat.widget.AppCompatButton;
+
 
 /**
  * Created by Administrator on 2017/6/18.
  */
 
-public class Custom_MyButton extends android.support.v7.widget.AppCompatButton {
+public class Custom_MyButton extends AppCompatButton {
 
 
     public Custom_MyButton(Context context) {
